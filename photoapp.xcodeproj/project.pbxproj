@@ -19,6 +19,8 @@
 		DC86115629C8D8A70030442E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86115529C8D8A70030442E /* FeedViewController.swift */; };
 		DC86115829C8D9570030442E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86115729C8D9570030442E /* CameraViewController.swift */; };
 		DC86115A29C8D9670030442E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86115929C8D9670030442E /* SettingsViewController.swift */; };
+		DC86115C29C8F4AE0030442E /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86115B29C8F4AE0030442E /* PhotoUser.swift */; };
+		DC86115E29C8F4E30030442E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86115D29C8F4E30030442E /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		DC86115529C8D8A70030442E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		DC86115729C8D9570030442E /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		DC86115929C8D9670030442E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DC86115B29C8F4AE0030442E /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
+		DC86115D29C8F4E30030442E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		DC86114C29C8D4550030442E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DC86115D29C8F4E30030442E /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 		DC86114F29C8D4970030442E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC86115B29C8F4AE0030442E /* PhotoUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,7 +278,9 @@
 			files = (
 				DC86115429C8D5640030442E /* CreateProfileViewController.swift in Sources */,
 				DC86115229C8D4EE0030442E /* LoginViewController.swift in Sources */,
+				DC86115E29C8F4E30030442E /* UserService.swift in Sources */,
 				DC86115A29C8D9670030442E /* SettingsViewController.swift in Sources */,
+				DC86115C29C8F4AE0030442E /* PhotoUser.swift in Sources */,
 				DC86115629C8D8A70030442E /* FeedViewController.swift in Sources */,
 				DC86113629C8D0C10030442E /* AppDelegate.swift in Sources */,
 				DC86113829C8D0C10030442E /* SceneDelegate.swift in Sources */,
