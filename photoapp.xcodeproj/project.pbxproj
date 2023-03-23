@@ -23,6 +23,7 @@
 		DC86115E29C8F4E30030442E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86115D29C8F4E30030442E /* UserService.swift */; };
 		DC86116429CA52F30030442E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86116329CA52F30030442E /* Constants.swift */; };
 		DC997B3D29CCBADE005EE4DF /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B3C29CCBADE005EE4DF /* LocalStorageService.swift */; };
+		DC997B3F29CCC896005EE4DF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B3E29CCC896005EE4DF /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		DC86115D29C8F4E30030442E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		DC86116329CA52F30030442E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = photoapp/Constants.swift; sourceTree = SOURCE_ROOT; };
 		DC997B3C29CCBADE005EE4DF /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
+		DC997B3E29CCC896005EE4DF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				DC86115529C8D8A70030442E /* FeedViewController.swift */,
 				DC86115729C8D9570030442E /* CameraViewController.swift */,
 				DC86115929C8D9670030442E /* SettingsViewController.swift */,
+				DC997B3E29CCC896005EE4DF /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				DC86115429C8D5640030442E /* CreateProfileViewController.swift in Sources */,
 				DC86115229C8D4EE0030442E /* LoginViewController.swift in Sources */,
+				DC997B3F29CCC896005EE4DF /* MainTabBarController.swift in Sources */,
 				DC86115E29C8F4E30030442E /* UserService.swift in Sources */,
 				DC86115A29C8D9670030442E /* SettingsViewController.swift in Sources */,
 				DC86115C29C8F4AE0030442E /* PhotoUser.swift in Sources */,
