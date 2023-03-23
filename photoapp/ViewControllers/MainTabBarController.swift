@@ -91,7 +91,17 @@ extension MainTabBarController: UIImagePickerControllerDelegate & UINavigationCo
         // Check that the selected image isn't nil
         if let selectedImage = selectedImage {
             
-            // Upload it
+            // Get a reference to the camera view controller tab
+            let cameraVC = self.selectedViewController as? CameraViewController
+            
+            if let cameraVC = cameraVC {
+                
+                // Upload it
+                cameraVC.savePhoto(image: selectedImage)
+                
+            }
+            
+            
             
         }
         

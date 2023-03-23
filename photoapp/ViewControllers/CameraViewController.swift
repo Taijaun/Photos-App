@@ -15,5 +15,11 @@ class CameraViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    func savePhoto(image: UIImage) {
+        
+        // call the photo service to store the photo
+        PhotoService.savePhoto(image: image)
+    }
 
 }
