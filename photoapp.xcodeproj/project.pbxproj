@@ -24,6 +24,7 @@
 		DC86116429CA52F30030442E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC86116329CA52F30030442E /* Constants.swift */; };
 		DC997B3D29CCBADE005EE4DF /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B3C29CCBADE005EE4DF /* LocalStorageService.swift */; };
 		DC997B3F29CCC896005EE4DF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B3E29CCC896005EE4DF /* MainTabBarController.swift */; };
+		DC997B4129CCD82B005EE4DF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B4029CCD82B005EE4DF /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		DC86116329CA52F30030442E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = photoapp/Constants.swift; sourceTree = SOURCE_ROOT; };
 		DC997B3C29CCBADE005EE4DF /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		DC997B3E29CCC896005EE4DF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DC997B4029CCD82B005EE4DF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				DC86115B29C8F4AE0030442E /* PhotoUser.swift */,
+				DC997B4029CCD82B005EE4DF /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				DC86115E29C8F4E30030442E /* UserService.swift in Sources */,
 				DC86115A29C8D9670030442E /* SettingsViewController.swift in Sources */,
 				DC86115C29C8F4AE0030442E /* PhotoUser.swift in Sources */,
+				DC997B4129CCD82B005EE4DF /* Photo.swift in Sources */,
 				DC86116429CA52F30030442E /* Constants.swift in Sources */,
 				DC86115629C8D8A70030442E /* FeedViewController.swift in Sources */,
 				DC86113629C8D0C10030442E /* AppDelegate.swift in Sources */,
