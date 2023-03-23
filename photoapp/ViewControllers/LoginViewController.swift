@@ -72,6 +72,9 @@ extension LoginViewController: FUIAuthDelegate {
                 } else {
                     // If so, go to tab bar controller
                     
+                    // Save user to local storage
+                    LocalStorageService.saveUser(userId: user!.userId, username: user!.username)
+                    
                     // Create an instance of the tab bar controller
                     let tabBarVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.tabBarController)
                     
