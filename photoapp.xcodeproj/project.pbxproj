@@ -26,6 +26,8 @@
 		DC997B3F29CCC896005EE4DF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B3E29CCC896005EE4DF /* MainTabBarController.swift */; };
 		DC997B4129CCD82B005EE4DF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B4029CCD82B005EE4DF /* Photo.swift */; };
 		DC997B4329CCDFF7005EE4DF /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B4229CCDFF7005EE4DF /* PhotoService.swift */; };
+		DC997B4529CDA1CC005EE4DF /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B4429CDA1CC005EE4DF /* PhotoCell.swift */; };
+		DC997B4729CDEEF8005EE4DF /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997B4629CDEEF8005EE4DF /* ImageCacheService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		DC997B3E29CCC896005EE4DF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		DC997B4029CCD82B005EE4DF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		DC997B4229CCDFF7005EE4DF /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		DC997B4429CDA1CC005EE4DF /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		DC997B4629CDEEF8005EE4DF /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 				DC86115D29C8F4E30030442E /* UserService.swift */,
 				DC997B3C29CCBADE005EE4DF /* LocalStorageService.swift */,
 				DC997B4229CCDFF7005EE4DF /* PhotoService.swift */,
+				DC997B4629CDEEF8005EE4DF /* ImageCacheService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 		DC86114E29C8D4830030442E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC997B4429CDA1CC005EE4DF /* PhotoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC86115429C8D5640030442E /* CreateProfileViewController.swift in Sources */,
+				DC997B4529CDA1CC005EE4DF /* PhotoCell.swift in Sources */,
 				DC86115229C8D4EE0030442E /* LoginViewController.swift in Sources */,
 				DC997B3F29CCC896005EE4DF /* MainTabBarController.swift in Sources */,
 				DC86115E29C8F4E30030442E /* UserService.swift in Sources */,
@@ -300,6 +307,7 @@
 				DC997B4329CCDFF7005EE4DF /* PhotoService.swift in Sources */,
 				DC997B4129CCD82B005EE4DF /* Photo.swift in Sources */,
 				DC86116429CA52F30030442E /* Constants.swift in Sources */,
+				DC997B4729CDEEF8005EE4DF /* ImageCacheService.swift in Sources */,
 				DC86115629C8D8A70030442E /* FeedViewController.swift in Sources */,
 				DC86113629C8D0C10030442E /* AppDelegate.swift in Sources */,
 				DC86113829C8D0C10030442E /* SceneDelegate.swift in Sources */,

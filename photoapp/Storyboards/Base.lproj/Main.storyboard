@@ -71,6 +71,51 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="otm-jM-MQM">
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo Cell" rowHeight="300" id="fNA-yn-RYm" customClass="PhotoCell" customModule="photoapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fNA-yn-RYm" id="uJE-sU-PUK">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8B-KO-dZ9">
+                                                    <rect key="frame" x="40" y="31" width="42" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XDj-CJ-4XN">
+                                                    <rect key="frame" x="40" y="61.333333333333329" width="313" height="177.33333333333337"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="177.33000000000001" id="SMX-hE-FRm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kso-aD-no3">
+                                                    <rect key="frame" x="40" y="248.66666666666666" width="42" height="20.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="XDj-CJ-4XN" secondAttribute="trailing" constant="20" id="1f5-i3-YCG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Kso-aD-no3" secondAttribute="bottom" constant="20" id="2mR-MI-3tP"/>
+                                                <constraint firstItem="Kso-aD-no3" firstAttribute="leading" secondItem="uJE-sU-PUK" secondAttribute="leadingMargin" constant="20" id="503-Bf-zRr"/>
+                                                <constraint firstItem="S8B-KO-dZ9" firstAttribute="leading" secondItem="uJE-sU-PUK" secondAttribute="leadingMargin" constant="20" id="JBX-FG-agj"/>
+                                                <constraint firstItem="XDj-CJ-4XN" firstAttribute="leading" secondItem="uJE-sU-PUK" secondAttribute="leadingMargin" constant="20" id="XCA-ba-5tv"/>
+                                                <constraint firstItem="XDj-CJ-4XN" firstAttribute="top" secondItem="S8B-KO-dZ9" secondAttribute="bottom" constant="10" id="ZH2-g4-I3e"/>
+                                                <constraint firstItem="Kso-aD-no3" firstAttribute="top" secondItem="XDj-CJ-4XN" secondAttribute="bottom" constant="10" id="htk-1t-7rb"/>
+                                                <constraint firstItem="S8B-KO-dZ9" firstAttribute="top" secondItem="uJE-sU-PUK" secondAttribute="topMargin" constant="20" id="qdF-K7-eKc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Kso-aD-no3" id="PKu-HN-uXr"/>
+                                            <outlet property="photoImageView" destination="XDj-CJ-4XN" id="Y35-RY-rqN"/>
+                                            <outlet property="usernameLabel" destination="S8B-KO-dZ9" id="Wuz-xC-4wt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o3m-ge-mSb"/>
@@ -89,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrg-Mg-zPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="1413"/>
+            <point key="canvasLocation" x="-19.083969465648853" y="1412.6760563380283"/>
         </scene>
         <!--Add-->
         <scene sceneID="tjg-km-ihY">
