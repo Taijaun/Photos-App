@@ -12,7 +12,7 @@ import FirebaseAuth
 
 class PhotoService {
     
-    static func savePhoto(image:UIImage) {
+    static func savePhoto(image:UIImage, progressUpdate: @escaping (Double) -> Void) {
         
         // Check that there is a user logged in
         if Auth.auth().currentUser == nil {
@@ -37,7 +37,7 @@ class PhotoService {
         let ref = Storage.storage().reference().child("images/\(userId)/\(filename).jpg")
         
         // upload the data
-        ref.putData(photoData!) { metadata, error in
+        let uploadTask = ref.putData(photoData!) { metadata, error in
             
             // Check if upload was successful
             if error == nil {
@@ -45,6 +45,15 @@ class PhotoService {
                 self.createDatabaseEntry(ref: ref)
                 
             }
+        }
+        
+        uploadTask.observe(.progress) { taskSnapshot in
+            
+            let pct = Double(taskSnapshot.progress!.completedUnitCount) / Double(taskSnapshot.progress!.totalUnitCount)
+            
+            print(pct)
+            // pass the update to the camera view controller
+            progressUpdate(pct)
         }
     }
     

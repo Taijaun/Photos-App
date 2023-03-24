@@ -98,10 +98,48 @@
                     <view key="view" contentMode="scaleToFill" id="adf-Ku-mAi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="ifY-9B-vo1">
+                                <rect key="frame" x="20" y="308.66666666666669" width="353" height="234.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Complete!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNH-Gy-pum">
+                                        <rect key="frame" x="107.66666666666667" y="0.0" width="137.66666666666663" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q9i-LF-IxT">
+                                        <rect key="frame" x="20" y="108.33333333333331" width="313" height="4"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qk6-8w-4i5">
+                                        <rect key="frame" x="121" y="200.33333333333331" width="111" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go To Feed"/>
+                                        <connections>
+                                            <action selector="doneTapped:" destination="Oj8-yf-9li" eventType="touchUpInside" id="pQt-Cp-zrq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Q9i-LF-IxT" secondAttribute="trailing" constant="20" id="tFS-rD-DU2"/>
+                                    <constraint firstItem="Q9i-LF-IxT" firstAttribute="leading" secondItem="ifY-9B-vo1" secondAttribute="leading" constant="20" id="xFr-1g-3YZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QKH-Tx-LZJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ifY-9B-vo1" firstAttribute="leading" secondItem="QKH-Tx-LZJ" secondAttribute="leading" constant="20" id="EEd-cO-c7T"/>
+                            <constraint firstItem="ifY-9B-vo1" firstAttribute="centerY" secondItem="adf-Ku-mAi" secondAttribute="centerY" id="jgh-tQ-09D"/>
+                            <constraint firstItem="QKH-Tx-LZJ" firstAttribute="trailing" secondItem="ifY-9B-vo1" secondAttribute="trailing" constant="20" id="qfd-se-TCv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Add" id="I87-GA-m9P"/>
+                    <connections>
+                        <outlet property="doneButton" destination="Qk6-8w-4i5" id="GxR-Xp-UHE"/>
+                        <outlet property="progressBar" destination="Q9i-LF-IxT" id="vDS-8J-C5G"/>
+                        <outlet property="progressLabel" destination="PNH-Gy-pum" id="qHe-Pc-Qea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWr-hG-paE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
